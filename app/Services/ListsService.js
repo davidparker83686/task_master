@@ -13,6 +13,20 @@ class ListsService {
     saveState()
     ProxyState.lists = ProxyState.lists
   }
+
+  totalCompleted(id) {
+    console.log(id);
+    let list = ProxyState.lists.find(i => i.id == id)
+    if (list.completed == true) {
+      list.completed = false
+    } else if (list.completed == false) {
+      list.completed = true
+    }
+
+    console.log(list)
+    saveState()
+    ProxyState.lists = ProxyState.lists
+  }
 }
 
 export const listsService = new ListsService();

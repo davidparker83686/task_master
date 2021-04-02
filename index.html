@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
-    <title>task_master</title>
+    <title>task master</title>
 </head>
 
 <body>
@@ -25,86 +25,44 @@
         </div>
     </header>
 
-
-
-
-
-
-
-
-
-
-    <div class="col">
-        <form class=" px-3" onsubmit="app.tasksController.addTask()">
-            <div class="form-group d-flex">
-                <div>
-                    <label for="name"></label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Name..."
-                        aria-describedby="helpId" minlength="3" maxlength="50">
-                </div>
-                <div class="ml-3">
-                    <label for="size"></label>
-                    <select class="custom-select" id="size" aria-label="size select" required>
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option selected value="large">Large</option>
-                    </select>
-                </div>
-                <div class="ml-3 d-flex align-items-end">
-                    <button type="submit" class="btn btn-success" title='add task'><i class="fas fa-plus"></i></button>
-                </div>
-            </div>
-        </form>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <main class="container-fluid">
+
+        <div class="row">
+
+            <!-- add stuff area -->
+            <div class="col">
+                <form class=" px-5 mx-2" onsubmit="app.tasksController.addTask()">
+                    <div class="form-group d-flex">
+                        <div>
+                            <label for="name"></label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Name..."
+                                aria-describedby="helpId" required minlength="3" maxlength="50">
+                        </div>
+                        <div class="ml-3">
+                            <label for="size"></label>
+                            <select class="custom-select" id="size" aria-label="size select" required>
+                                <option selected value="">Color</option>
+                                <option value="red">Red</option>
+                                <option value="pink">Pink</option>
+                                <option value="green">Green</option>
+                                <option value="orange">Orange</option>
+                                <option value="blue">Blue</option>
+                            </select>
+                        </div>
+                        <div class="ml-3 d-flex align-items-end">
+                            <button type="submit" class="btn btn-success" title='add task'><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- cards with lists go here -->
+        </div>
         <div class="row justify-content-around " id="tasks">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
-
 
 
 
@@ -121,7 +79,6 @@
             </div>
         </div>
     </footer>
-
 
     </div>
     <script src="app/main.js" type="module"></script>

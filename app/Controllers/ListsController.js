@@ -20,8 +20,9 @@ export default class ListsController {
   deleteList(id) {
     listsService.deleteList(id)
   }
-  listCompleted(id) {
-    listsService.deleteList(id)
+
+  totalCompleted(id) {
+    listsService.totalCompleted(id)
   }
 
 }
