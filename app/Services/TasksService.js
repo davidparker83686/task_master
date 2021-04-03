@@ -8,7 +8,7 @@ class TasksService {
     saveState()
   }
   addTask(newTask) {
-    ProxyState.tasks = [...ProxyState.tasks, new Task(newTask.name, newTask.size)]
+    ProxyState.tasks = [...ProxyState.tasks, new Task(newTask.name, newTask.color)]
     saveState()
   }
 }

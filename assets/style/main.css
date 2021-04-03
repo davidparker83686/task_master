@@ -10695,4 +10695,33 @@ main {
   flex-grow: 1;
 }
 
+
+
+.red{
+  background-color: rgb(255, 118, 64);
+  color: rgb(136, 255, 191)
+}
+
+.blue{
+  background-color: rgb(0, 255, 242);
+  color: rgb(255, 174, 67)
+}
+
+.green{
+  background-color: rgb(136, 255, 191);
+  color: rgb(255, 118, 64)
+}
+
+.pink{
+  background-color: rgb(207, 48, 75);
+  color: rgb(136, 255, 191)
+}
+
+.orange {
+  background-color: rgb(255, 174, 67);
+  color:rgb(0, 255, 242)
+}
+
+
+
 /*# sourceMappingURL=main.css.map */

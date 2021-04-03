@@ -9,11 +9,12 @@
 ##Lists and tasks each have a delete button
 ##Tasks can be marked complete, this will persist on reload (checked attribute)
 ##Lists include a count of all tasks compared to uncompleted tasks
-
-
-
-
+###List creation must include a color picker or minimum 5 different colors
 ##All Data persists through local storage
+
+
+
+
 
 
 
@@ -23,5 +24,3 @@ Forms should not submit unless the fields adhere to the requirements
 
 Users are prompted to confirm any delete (search window.confirm)
 
-
-List creation must include a color picker or minimum 5 different colors

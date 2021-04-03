@@ -28,7 +28,7 @@ export default class TasksController {
     let form = window.event.target
     let rawTask = {
       name: form['name'].value,
-      size: form['size'].value
+      color: form['color'].value
     }
     tasksService.addTask(rawTask)
     form.reset()

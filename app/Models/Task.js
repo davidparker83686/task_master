@@ -2,9 +2,9 @@ import { ProxyState } from "../AppState.js"
 import { generateId } from "../Utils/GenerateId.js"
 
 export default class Task {
-    constructor(name, size, id = generateId()) {
+    constructor(name, color, id = generateId()) {
         this.name = name
-        this.size = size
+        this.color = color
         this.id = id
     }
 
@@ -12,7 +12,7 @@ export default class Task {
     get Template() {
         return `
             <div class="card p-0 col-3 mx-5 mb-5">
-                <div class="card-header bg-info">
+                <div class="card-header ${this.color}">
 
                 <p class="text-success text-right">
                 <i class="fas fa-times" title='delete' onclick="app.tasksController.deleteTask('${this.id}')"></i>
