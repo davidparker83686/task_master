@@ -11,20 +11,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <title>task master</title>
 </head>
 
-<body>
+<body class="beach">
 
-    <header class="container-fluid">
+    <header class="container-fluid body-font ">
         <div class="row">
             <div class="col">
-                <h1 class="text-center mt-5">Task Master</h1>
+                <h1 class="text-center mt-5 title-task-master">Task Master</h1>
             </div>
         </div>
     </header>
 
-    <main class="container-fluid">
+    <main class="container-fluid body-font ">
 
         <div class="row">
 
@@ -41,15 +46,15 @@
                             <label for="color"></label>
                             <select class="custom-select" id="color" aria-label="color select" required>
                                 <option selected value="">Color</option>
-                                <option value="red">Red</option>
-                                <option value="pink">Pink</option>
-                                <option value="green">Green</option>
-                                <option value="orange">Orange</option>
-                                <option value="blue">Blue</option>
+                                <option class="redtext" value="red">Red</option>
+                                <option class="pinktext" value="pink">Pink</option>
+                                <option class="greentext" value="green">Green</option>
+                                <option class="orangetext" value="orange">Orange</option>
+                                <option class="bluetext" value="blue">Blue</option>
                             </select>
                         </div>
                         <div class="ml-3 d-flex align-items-end">
-                            <button type="submit" class="btn btn-success" title='add task'><i
+                            <button type="submit" class="btn buttoncolor" title='add task'><i
                                     class="fas fa-plus"></i></button>
                         </div>
                     </div>
@@ -69,7 +74,9 @@
 
 
 
-
+        <div>
+            <img src="assets.img.logo.png" alt="">
+        </div>
 
 
 
@@ -82,10 +89,10 @@
     </main>
 
 
-    <footer class="container-fluid bg-dark text-light">
+    <footer class="container-fluid footercolor body-font">
         <div class="row text-center">
             <div class="col">
-                <p><small>Task Master 4/2/21</small></p>
+                <p class="m-0"><small>Task Master 4/2/21</small></p>
             </div>
         </div>
     </footer>

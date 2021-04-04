@@ -10701,27 +10701,68 @@ main {
   background-color: rgb(255, 118, 64);
   color: rgb(136, 255, 191)
 }
-
 .blue{
   background-color: rgb(0, 255, 242);
   color: rgb(255, 174, 67)
 }
-
 .green{
-  background-color: rgb(136, 255, 191);
+  background-color: rgb(46, 255, 144);
   color: rgb(255, 118, 64)
 }
-
 .pink{
   background-color: rgb(207, 48, 75);
   color: rgb(136, 255, 191)
 }
-
 .orange {
   background-color: rgb(255, 174, 67);
   color:rgb(0, 255, 242)
 }
 
+.redtext{
+color: rgb(255, 118, 64);
+}
+.bluetext{
+  color:rgb(0, 255, 242)
+}
+.greentext{
+  color:rgb(46, 255, 144);
+}
+.orangetext{
+  color:rgb(255, 174, 67);
+}
+.pinktext{
+  color:rgb(207, 48, 75);
+}
+
+
+
+
+
+.title-task-master{
+  font-size: 100px;
+  font-family: 'Yellowtail', cursive;
+  color: #80ff00;
+}
+
+.body-font{
+  font-family: 'Righteous', cursive;
+}
+
+
+
+.beach{
+background: rgb(128,255,0);
+background: linear-gradient(0deg, rgba(128,255,0,1) 0%, rgba(202,182,80,1) 50%, rgba(251,133,133,1) 100%);
+
+  /* background-image: url(./beach.png) !important; */
+  /* background-size: cover;
+  background-position: center */
+}
+
+.footercolor{
+    background: #fb8585;
+    color: white
+}
 
 
 /*# sourceMappingURL=main.css.map */

@@ -14,12 +14,17 @@ export default class Task {
             <div class="card p-0 col-3 mx-5 mb-5">
                 <div class="card-header ${this.color}">
 
-             <button title="Delete" type="button" class="btn btn-outline-white shadow-none text-white"data-toggle="modal" data-target="#view-cart"><b>x</b></button>
+                
+                <div class="card-title p-0 m-0" style="text-align-last: end">
+                <button title="Delete" type="button" class="btn btn-outline-white shadow-none text-white"data-toggle="modal"  data-target="#view-cart${this.id}"><b>x</b></button>
+                    </div>
+
+                
 
 
 
 
-                     <div class="modal fade" id="view-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                     <div class="modal fade" id="view-cart${this.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -44,15 +49,15 @@ export default class Task {
 
 
 
-                    <h5 class="card-title">${this.name}</h5>
+                    <h5 class="card-title">${this.name.toUpperCase()}</h5>
                     <h5 class="card-title"> ${this.totalCompleted()}/${this.total()}</h5>
                 </div>
                 <div class="card-body">
 
                     <p class="card-text">${this.Lists}</p>
 
-                    <div>
-                                        <form class="d-flex p-2" onsubmit="app.listsController.addList('${this.id}')" required min="3" max="15">
+                    <div justify-content-end>
+                    <form class="d-flex p-2" onsubmit="app.listsController.addList('${this.id}')" required min="3" max="15">
                         <input type="text" name="name" class="form-control" placeholder="Add Task.."
                             aria-describedby="helpId" required minlength="3" maxlength="15">
                         <button type="submit" class="btn btn-success ml-5" title='add task'><i

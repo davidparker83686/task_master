@@ -35,7 +35,7 @@ export default class List {
 
                 <p>${this.name}
                 
-                <span><i class="fas fa-times ml-2 text-danger" data-toggle="modal" data-target="#view-cart-two" title='delete'></i></span></p>
+                <span><i class="fas fa-times ml-2 text-danger" data-toggle="modal" data-target="#view-cart-${this.id}" title='delete'></i></span></p>
 
                  
                 </div>
@@ -43,7 +43,7 @@ export default class List {
 
 
 
-            <div class="modal fade" id="view-cart-two" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="view-cart-${this.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">

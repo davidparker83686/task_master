@@ -8,7 +8,7 @@ function _draw() {
   let tasks = ProxyState.tasks;
   let template = ''
   if (tasks.length == 0) {
-    template += '<div class="col text-center"><p><em>no tasks</em><p></div>'
+    template += '<div class="col text-center text-white"><p><em>no tasks</em><p></div>'
   }
   tasks.forEach(p => template += p.Template)
   document.getElementById("tasks").innerHTML = template
