@@ -10759,6 +10759,11 @@ background: linear-gradient(0deg, rgba(128,255,0,1) 0%, rgba(202,182,80,1) 50%, 
   background-position: center */
 }
 
+.buttoncolor{
+   background: #80ff00;
+  color:white
+}
+
 .footercolor{
     background: #fb8585;
     color: white
