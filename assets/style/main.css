@@ -10754,8 +10754,8 @@ color: rgb(255, 118, 64);
 background: rgb(128,255,0);
 background: linear-gradient(0deg, rgba(128,255,0,1) 0%, rgba(202,182,80,1) 50%, rgba(251,133,133,1) 100%);
 
-  /* background-image: url(./beach.png) !important; */
-  /* background-size: cover;
+  /* background-image: url(./beachbackground.png) !important;
+  background-size: cover;
   background-position: center */
 }
 
