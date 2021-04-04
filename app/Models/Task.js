@@ -14,9 +14,35 @@ export default class Task {
             <div class="card p-0 col-3 mx-5 mb-5">
                 <div class="card-header ${this.color}">
 
-                <p class="text-success text-right">
-                <i class="fas fa-times" title='delete' onclick="app.tasksController.deleteTask('${this.id}')"></i>
-                </p>
+             <button title="Delete" type="button" class="btn btn-outline-white shadow-none text-white"data-toggle="modal" data-target="#view-cart"><b>x</b></button>
+
+
+
+
+                     <div class="modal fade" id="view-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="align-self: center;">
+                        <h5 class="modal-title text-dark" id="exampleModalLabel">Are You Sure You Want To Delete?</h5>
+                    </div>
+
+                    <div style="align-self: center;">
+                        <button type="button" title="Keep" class="btn btn-info mx-5 my-3"
+                            data-dismiss="modal">Keep</button>
+
+                        <button type="submit" title="Delete" class="btn btn-danger mx-5 my-3" data-dismiss="modal"
+                            onclick="app.tasksController.deleteTask('${this.id}')">Delete</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
 
                     <h5 class="card-title">${this.name}</h5>
                     <h5 class="card-title"> ${this.totalCompleted()}/${this.total()}</h5>
@@ -33,7 +59,6 @@ export default class Task {
                                 class="fas fa-plus"></i></button>
                     </form>
 
-                    <button class="mt-4 btn btn-info d-flex" title='complete task'>Submit </button>
 
                     </div>
 

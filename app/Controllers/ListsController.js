@@ -18,6 +18,7 @@ export default class ListsController {
   }
 
   deleteList(id) {
+    debugger
     listsService.deleteList(id)
   }
 
